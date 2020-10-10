@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: slategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*styling for the first container*/
+div.container1{
+    width: 30%;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    margin-top: 120px;
+}
+
+div.inner1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: skyblue;
+    padding: 50px 30px 0 30px ;
+    border-radius: 5px;
+    clip-path: circle(10% at 3% 3%);
+    transition: all .5s ease-in-out;
+}
+
+div.inner1>h1{
+    color:white;
+}
+
+div.inner1>p{
+padding: 2rem 0;
+color:white;
+font-size: .8rem;
+}
+
+div.container1:hover .inner1{
+    clip-path: circle(75%);
+    background-color:cornflowerblue;
+}
+
+/*styling for the second container*/
+
+div.inner2{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: skyblue;
+    padding: 10px 30px 0 30px ;
+    border-radius: 5px;
+    clip-path: circle(10% at 10% 20%);
+    transition: all .5s ease-in-out;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+div.inner2>h1{
+    color:white;
+}
+
+div.inner2>p{
+    padding: 2rem 0;
+    color:white;
+    font-size: .8rem;
+    text-align: justify;
+}
+
+div.inner2>span{
+    font-size: 20px;
+    color: cornflowerblue;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 22px 0 16px 6px;
+}
+
+div.inner2:hover{
+    clip-path: circle(75%);
+    background-color:cornflowerblue;
+}
+
+div.inner2:hover span{
+    color: rgba(255, 255, 255, 0);
+}
+
+/*styling for the third container*/
+div.container3{
+    width: 30%;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+div.inner3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: skyblue;
+    padding: 50px 30px 0 30px ;
+    border-radius: 5px;
+    clip-path: inset(0% 98% 0% 0%);
+    transition: all .5s ease-in-out;
+}
+
+div.inner3>h1{
+    color:white;
+}
+
+div.inner3>p{
+    padding: 2rem 0;
+    color:white;
+    font-size: .8rem;
+}
+
+div.container3:hover .inner3{
+    clip-path: inset(0% 0% 0% 0%);
+    background-color:cornflowerblue;
+}
